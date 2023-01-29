@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            FontFamily: {
+              sans: ['Outfit', 'ui-sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <title>NFT preview card component</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center h-screen bg-[#0d192b]"></body>
+  <div
+    class="flex flex-col justify-center bg-[#14253d] rounded-2xl max-w-[350px] max-h-[850px] p-4"
+    #14253d=""
+    360px="">
+    <!-- Image Container -->
+    <div class="flex justify-center">
+      <img
+        src="images/image-equilibrium.jpg"
+        alt=""
+        class="rounded-2xl p-2 w-full" />
+    </div>
+    <!-- Main Text Container -->
+    <div class="flex flex-col space-y-4 mt-2">
+      <p class="text-white font-[Outfit] font-semibold text-2xl px-4">
+        Equilibrium #3429
+      </p>
+      <p class="px-4 font-[Outfit] font-light text-[#8bacda]">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+    </div>
+    <!-- Price and days left Container -->
+
+    <div class="flex flex-row justify-between px-4 py-4">
+      <div class="flex flex-row space-x-2">
+        <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+            fill="#00FFF8" />
+        </svg>
+        <p class="text-[#00fff7]">0.041 ETH</p>
+      </div>
+      <div class="flex flex-row space-x-2">
+        <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+            fill="#8BACD9" />
+        </svg>
+        <p class="text-[#8bacda]">3 days left</p>
+      </div>
+    </div>
+    <div class="flex border-b border-[#8bacda] mx-4"></div>
+    <!-- Footer Container -->
+    <div class="flex flex-row mt-4 px-4">
+      <img
+        src="images/image-avatar.png"
+        alt=""
+        class="border rounded-full h-8" />
+      <p class="text-[#8bacda] font-[Outfit] pl-4">
+        Creation of <span class="text-white font-[Outfit]">Jules Wyvern</span>
+      </p>
+    </div>
+  </div>
+</html>
