@@ -36,15 +36,23 @@
     #14253d=""
     360px="">
     <!-- Image Container -->
-    <div class="flex justify-center">
+    <div class="relative flex items-center justify-center p-2">
+      <div class="absolute">
+        <img
+          src="images/icon-view.svg"
+          alt=""
+          class="invisible hover:visible" />
+      </div>
       <img
         src="images/image-equilibrium.jpg"
         alt=""
-        class="rounded-2xl p-2 w-full" />
+        class="rounded-2xl w-full hover:cursor-pointer" />
     </div>
+
     <!-- Main Text Container -->
     <div class="flex flex-col space-y-4 mt-2">
-      <p class="text-white font-[Outfit] font-semibold text-2xl px-4">
+      <p
+        class="text-white font-[Outfit] font-semibold text-2xl px-4 hover:text-[#00fff7] hover:cursor-pointer">
         Equilibrium #3429
       </p>
       <p class="px-4 font-[Outfit] font-light text-[#8bacda]">
@@ -54,7 +62,7 @@
     <!-- Price and days left Container -->
 
     <div class="flex flex-row justify-between px-4 py-4">
-      <div class="flex flex-row space-x-2">
+      <div class="flex flex-row space-x-2 items-center">
         <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
@@ -62,8 +70,8 @@
         </svg>
         <p class="text-[#00fff7]">0.041 ETH</p>
       </div>
-      <div class="flex flex-row space-x-2">
-        <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+      <div class="flex flex-row space-x-2 items-center">
+        <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" class="">
           <path
             d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
             fill="#8BACD9" />
@@ -73,13 +81,17 @@
     </div>
     <div class="flex border-b border-[#8bacda] mx-4"></div>
     <!-- Footer Container -->
-    <div class="flex flex-row mt-4 px-4">
+    <div class="flex flex-row mt-4 px-4 items-center">
       <img
         src="images/image-avatar.png"
         alt=""
         class="border rounded-full h-8" />
       <p class="text-[#8bacda] font-[Outfit] pl-4">
-        Creation of <span class="text-white font-[Outfit]">Jules Wyvern</span>
+        Creation of
+        <span
+          class="text-white font-[Outfit] hover:text-[#00fff7] hover:cursor-pointer"
+          >Jules Wyvern</span
+        >
       </p>
     </div>
   </div>
