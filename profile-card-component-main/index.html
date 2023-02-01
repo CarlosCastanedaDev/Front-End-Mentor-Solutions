@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            kumbh: ['"Kumbh Sans"', 'sans-serif'],
+          },
+          extend: {},
+        },
+      };
+    </script>
+    <title>Profile card component</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center h-screen bg-top bg-[#19a2ae]"
+    style="background-image: url(images/bg-pattern-top.svg)">
+    <div class="flex flex-col bg-white rounded-2xl max-w-[375px] max-h-[850px]">
+      <img src="images/bg-pattern-card.svg" alt="" class="rounded-t-2xl" />
+      <img
+        src="images/image-victor.jpg"
+        alt=""
+        class="rounded-full border-4 border-white w-32 mx-auto -mt-16" />
+      <div class="flex flex-col justify-center items-center my-6 space-y-4">
+        <h2
+          class="text-[#2d3248] font-bold text-xl font-[Kumbh Sans] tracking-wide">
+          Victor Crest <span class="text-[#6a6f81] font-normal pl-2">26</span>
+        </h2>
+        <p class="tracking-wider text-[#6a6f81]">London</p>
+      </div>
+      <div class="border-b"></div>
+      <div
+        class="flex flex-row items-center justify-center space-x-12 mx-6 my-6">
+        <div class="text-center text-[#2d3248]">
+          <h3 class="font-bold text-xl">80K</h3>
+          <p class="tracking-widest text-sm text-[#6a6f81] font-thin">
+            Followers
+          </p>
+        </div>
+        <div class="text-center text-[#2d3248]">
+          <h3 class="font-bold text-xl">803K</h3>
+          <p class="tracking-widest text-sm text-[#6a6f81] font-thin">Likes</p>
+        </div>
+        <div class="text-center text-[#2d3248]">
+          <h3 class="font-bold text-xl">1.4K</h3>
+          <p class="tracking-widest text-sm text-[#6a6f81] font-thin">Photos</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
